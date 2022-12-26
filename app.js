@@ -1,7 +1,17 @@
 const element2 = document.getElementsByTagName('alivier-super-especicifico-bottom')
 addEventListener('click', (event) =>{
-    console.log(event)
     if(event.target == element2[0]){
-        document.body.innerHTML = `<div style="position: fixed; background-color: rgba( 0, 0, 0, .3);min-height: 100%;min-width: 100%;display: flex;justify-content: center;align-items: center;top: 0;"> <h2>hola mundo</h2> </div>`;
+        document.body.insertAdjacentHTML('afterbegin', `
+        <div id="chinchin-alivier" style="position: fixed; background-color: rgba( 0, 0, 0, .8);min-height: 100%;min-width: 100%;display: flex;justify-content: center;align-items: center;top: 0;"> <h2>hola mundo</h2>
+            <div style="height: 200px;width: 200px;display: flex;justify-content: center;align-items;">
+                <h2>HOLA MUNDO</h2>
+                <button id="btn-cerrar">Cerrar</button>
+            </div>
+        </div>`);
+       addEventListener('click', (event2) => {
+            if(event2.target  == document.getElementById('btn-cerrar')){
+                document.getElementById('chinchin-alivier').remove()
+            }
+       })
     }
 })
