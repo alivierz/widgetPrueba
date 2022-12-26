@@ -16,3 +16,6 @@ addEventListener('click', (event) =>{
        })
     }
 })
+const dataChinchinWidget = () =>{
+    console.log('HOLA')
+}
