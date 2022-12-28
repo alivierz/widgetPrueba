@@ -6,7 +6,7 @@ function sendMessageAlivier() {
 
 window.onmessage = function(e){
     if (e.data == 'message'){
-        alert('FUNCIONA')
+        document.getElementById('chinchin-alivier').remove()
     }
 }
 
