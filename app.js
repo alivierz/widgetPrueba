@@ -11,7 +11,6 @@ window.onmessage = function(e){
 }
 
 addEventListener('click', (event) =>{
-    console.log(window.window)
     if(event.target == element2[0]){
         document.body.insertAdjacentHTML('afterbegin', `
         <div id="chinchin-alivier" style="position: fixed;backdrop-filter: blur(5px);background-color: rgba(33,35,45,.9);min-height: 100%;min-width: 100%;display: flex;justify-content: center;align-items: center;top: 0;z-index: 10000;">
