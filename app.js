@@ -9,7 +9,6 @@ window.onmessage = function(e){
         document.getElementById('chinchin-alivier').remove()
     }
 }
-
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
         document.body.insertAdjacentHTML('afterbegin', `
@@ -21,7 +20,6 @@ addEventListener('click', (event) =>{
             </div>
         </div>`);
        addEventListener('click', (event2) => {
-            console.log(window)
             if(event2.target  == document.getElementById('btn-cerrar')){
                 document.getElementById('chinchin-alivier').remove()
             }
