@@ -23,11 +23,6 @@ addEventListener('click', (event) =>{
 
 //! generador de eventos
 const sendEvent = () =>{
-    window.top.dispatchEvent(new CustomEvent("alivier", {
-        detail: {
-          name: "HOLAAAAAAAAAAAAAAAAAAAAAAAAAAa"
-        }
-      }));
     window.top.postMessage('alivier', '*');
 }
 
