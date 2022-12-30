@@ -26,6 +26,26 @@ addEventListener('click', (event) =>{
        })
     }
 })
+
+//! generador de eventos
+const sendEvent = () =>{
+    dispatchEvent(new CustomEvent("alivier", {
+        detail: {
+          name: "HOLAAAAAAAAAAAAAAAAAAAAAAAAAAa"
+        }
+      }));
+}
+
+
+
+
+
+
+
+
+
+
+
 // const dataChinchinWidget = () =>{
 //     document.body.insertAdjacentHTML('afterbegin', `
 //     <div id="chinchin-alivier" style="position: fixed; background-color: rgba( 147, 0, 147, .8);min-height: 100%;min-width: 100%;display: flex;justify-content: center;align-items: center;top: 0;z-index: 10000;">
