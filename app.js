@@ -1,7 +1,7 @@
 const element2 = document.getElementsByTagName('alivier-super-especicifico-bottom')
 
 function sendMessageAlivier() {
-    window.top.getElementById('chinchin-alivier').remove()
+    window.top.postMessage('message', '*');
 }
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
