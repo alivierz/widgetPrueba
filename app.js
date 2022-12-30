@@ -29,7 +29,7 @@ addEventListener('click', (event) =>{
 
 //! generador de eventos
 const sendEvent = () =>{
-    dispatchEvent(new CustomEvent("alivier", {
+    window.top.dispatchEvent(new CustomEvent("alivier", {
         detail: {
           name: "HOLAAAAAAAAAAAAAAAAAAAAAAAAAAa"
         }
