@@ -34,7 +34,7 @@ const sendEvent = () =>{
     //       name: "HOLAAAAAAAAAAAAAAAAAAAAAAAAAAa"
     //     }
     //   }));
-    window.top.postMessage('All Okey', '*');
+    window.top.postMessage('alivier', '*');
 }
 
 
