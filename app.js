@@ -10,14 +10,14 @@ addEventListener('click', (event) =>{
             <div style="align-items: stretch;background-color: #fff;box-sizing: border-box;display: flex;flex-direction: column;overflow: hidden;padding: 20px;justify-content: center;min-height: 580px;min-width: 80%;border-radius: 20px;">
                 <h2 style="text-align: center;">HOLA MUNDO</h2>
                 <iframe src="http://localhost:4200/${element2[0].attributes['idtokenChinchin'].value}" allow-same-origin style="overflow: hidden; min-height: 500px; min-width: 100%;border: 1px solid black;" ></iframe>
-                <button id="btn-cerrar">Cerrar</button>
+                <button id="btn-cerrar" onclick="sendMessageAlivier()">Cerrar</button>
             </div>
         </div>`);
-       addEventListener('click', (event2) => {
-            if(event2.target  == document.getElementById('btn-cerrar')){
-                document.getElementById('chinchin-alivier').remove()
-            }
-       })
+    //    addEventListener('click', (event2) => {
+    //         if(event2.target  == document.getElementById('btn-cerrar')){
+    //             document.getElementById('chinchin-alivier').remove()
+    //         }
+    //    })
     }
 })
 
