@@ -23,7 +23,7 @@ addEventListener('click', (event) =>{
             </div>
         </div>`);
     }
-})
+}, {passive: true})
 
 //Funcion que se debe usar
     
