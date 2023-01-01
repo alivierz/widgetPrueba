@@ -18,7 +18,7 @@ addEventListener('click', (event) =>{
     }
 }, {passive: true})
 
-window.onmessage = (e) =>{
+window.top.onmessage = (e) =>{
     console.log('PENDEJOOOOOOOOOOOOOOOOOOOOOOO')
     if(e.data.complete || e.data == 'close-widget-chinchin'){ 
         document.getElementById('chinchin-alivier')?.remove()
