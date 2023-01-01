@@ -2,12 +2,11 @@ const element2 = document.getElementsByTagName('alivier-super-especicifico-botto
 
 function sendMessageAlivier() {
     window.top.postMessage('message', '*');
-    window.top.getElementById('chinchin-alivier').remove()
 }
 //! generador de eventos
 const sendEvent = () =>{
     window.top.postMessage('alivier', '*');
-    window.top.getElementById('chinchin-alivier').remove()
+    document.getElementById('chinchin-alivier').remove()
 }
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
