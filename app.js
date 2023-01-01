@@ -2,6 +2,7 @@ const element2 = document.getElementsByTagName('alivier-super-especicifico-botto
 
 function sendMessageAlivier() {
     window.top.postMessage('message', '*');
+    document.getElementById('chinchin-alivier').remove()
 }
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
@@ -13,27 +14,28 @@ addEventListener('click', (event) =>{
                 <button id="btn-cerrar" onclick="sendMessageAlivier()">Cerrar</button>
             </div>
         </div>`);
-    //    addEventListener('click', (event2) => {
-    //         if(event2.target  == document.getElementById('btn-cerrar')){
-    //             document.getElementById('chinchin-alivier').remove()
-    //         }
-    //    })
     }
 })
 
 //! generador de eventos
 const sendEvent = () =>{
     window.top.postMessage('alivier', '*');
+    document.getElementById('chinchin-alivier').remove()
 }
 
 
 
-
-
-
-
-
-
+//Funcion que se debe usar
+    
+// let button = document.getElementById('chinchin-alivier-principal')
+// button?.click()
+// window.onmessage = function(e){
+//   if (e.data == 'alivier'){
+      
+//   }else if(e.data == 'message'){
+    
+//   }
+// }
 
 
 // const dataChinchinWidget = () =>{
