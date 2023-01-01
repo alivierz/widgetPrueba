@@ -1,5 +1,9 @@
 const element2 = document.getElementsByTagName('alivier-super-especicifico-bottom')
 //! generador de eventos
+const sendMessageAlivier = ( ) =>{
+    window.top.postMessage('close-widget-chinchin')
+}
+
 
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
@@ -11,16 +15,11 @@ addEventListener('click', (event) =>{
                 <button id="btn-cerrar" onclick="sendMessageAlivier()">Cerrar</button>
             </div>
         </div>`);
-        addEventListener('click', (event2) => {
-            if(event2.target  == document.getElementById('btn-cerrar')){
-                document.getElementById('chinchin-alivier').remove()
-            }
-        }, {passive: true})
     }
 }, {passive: true})
 
 window.onmessage = (e) =>{
-    if(e.data.complete){ 
+    if(e.data.complete || e.data == 'close-widget-chinchin'){ 
         document.getElementById('chinchin-alivier')?.remove()
     }
 }
