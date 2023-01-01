@@ -3,6 +3,13 @@ const element2 = document.getElementsByTagName('alivier-super-especicifico-botto
 function sendMessageAlivier() {
     window.top.postMessage('message', '*');
 }
+//! generador de eventos
+const sendEvent = () =>{
+    window.top.postMessage('alivier', '*');
+}
+window.onmessage = function(e){
+      document.getElementById('chinchin-alivier').remove()
+}
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
         document.body.insertAdjacentHTML('afterbegin', `
@@ -15,14 +22,6 @@ addEventListener('click', (event) =>{
         </div>`);
     }
 })
-
-//! generador de eventos
-const sendEvent = () =>{
-    window.top.postMessage('alivier', '*');
-    document.getElementById('chinchin-alivier').remove()
-}
-
-
 
 //Funcion que se debe usar
     
