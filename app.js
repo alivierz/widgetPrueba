@@ -8,7 +8,9 @@ const sendEvent = () =>{
     window.top.postMessage('alivier', '*');
 }
 window.onmessage = function(e){
-      document.getElementById('chinchin-alivier').remove()
+    if(e.data == 'message' || e.data == 'alivier'){
+        document.getElementById('chinchin-alivier').remove()
+    }
 }
 addEventListener('click', (event) =>{
     if(event.target == element2[0]){
