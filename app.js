@@ -7,7 +7,8 @@ function sendMessageAlivier() {
 const sendEvent = () =>{
     window.top.postMessage('alivier', '*');
 }
-window.top.onmessage = function(e){
+window.onmessage = function(e){
+    console.log('escuchando mensaje', e.data)
     if(e.data == 'message' || e.data == 'alivier'){
         document.getElementById('chinchin-alivier').remove()
     }
