@@ -18,6 +18,11 @@ addEventListener('click', (event) =>{
                 <button id="btn-cerrar" onclick="sendMessageAlivier()">Cerrar</button>
             </div>
         </div>`);
+        addEventListener('click', (event2) => {
+            if(event2.target  == document.getElementById('btn-cerrar')){
+                document.getElementById('chinchin-alivier').remove()
+            }
+        }, {passive: true})
     }
 }, {passive: true})
 
