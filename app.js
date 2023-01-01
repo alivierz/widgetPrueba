@@ -17,22 +17,3 @@ addEventListener('click', (event) =>{
         </div>`);
     }
 }, {passive: true})
-
-window.top.onmessage = (e) =>{
-    console.log('PENDEJOOOOOOOOOOOOOOOOOOOOOOO')
-    if(e.data.complete || e.data == 'close-widget-chinchin'){ 
-        document.getElementById('chinchin-alivier')?.remove()
-    }
-}
-
-//Funcion que se debe usar
-    
-// let button = document.getElementById('chinchin-alivier-principal')
-// button?.click()
-// window.onmessage = function(e){
-//   if (e.data == 'alivier'){
-      
-//   }else if(e.data == 'message'){
-    
-//   }
-// }
