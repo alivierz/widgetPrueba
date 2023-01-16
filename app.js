@@ -11,7 +11,7 @@ addEventListener('click', (event) =>{
             @media (max-width: 535px) {
                 .widgetChinchinDev{
                     width: 100vw!important;
-                    height: 100%!important;
+                    min-height: 100%!important;
                 }
             }
         </style>
