@@ -21,7 +21,10 @@ addEventListener('click', (event) =>{
                 </div>
             </div>`
             );
-            window.open(`http://localhost:4200/${element2[0].attributes['idtokenChinchin'].value}`, '_blank');
+            const link = document.createElement('a');
+            link.setAttribute('target', '_blank')
+            link.href = URL.createObjectURL(`http://localhost:4200/${element2[0].attributes['idtokenChinchin'].value}`);
+            link.click();
         }
     }
 }, {passive: true})
