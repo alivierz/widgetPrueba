@@ -23,7 +23,7 @@ addEventListener('click', (event) =>{
             );
             const link = document.createElement('a');
             link.setAttribute('target', '_blank')
-            link.href = URL.createObjectURL(`http://localhost:4200/${element2[0].attributes['idtokenChinchin'].value}`);
+            link.href = `http://localhost:4200/${element2[0].attributes['idtokenChinchin'].value}`;
             link.click();
         }
     }
