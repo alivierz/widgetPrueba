@@ -29,8 +29,6 @@ addEventListener('click', (event) =>{
     }
 }, {passive: true})
 
-window.onbeforeunload = () =>{
-    const bc = new BroadcastChannel("test_channel");
-
-    bc.postMessage({status: 'canceled'});
-}
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+});
