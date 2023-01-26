@@ -28,7 +28,3 @@ addEventListener('click', (event) =>{
         }
     }
 }, {passive: true})
-
-window.addEventListener('beforeunload', function (e) {
-    e.preventDefault();
-});
