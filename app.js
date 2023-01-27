@@ -4,7 +4,7 @@ const sendMessageChinchin = ( ) =>{
     window.top.postMessage('close-widget-chinchin')
 }
 addEventListener('click', (event) =>{
-    console.log(element2[0].attributes)
+    console.log(element2[0])
     if(event.target == element2[0]){
         if(true){
             document.body.insertAdjacentHTML('afterbegin', `
