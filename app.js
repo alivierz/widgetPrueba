@@ -10,15 +10,14 @@ function myFunction(x) {
     } else {
         width = 'width: 80%;height: 90vh;'
     }
-  }
-  
-var x = window.matchMedia("(max-width: 600px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) 
+}
 
 
 
 addEventListener('click', (event) =>{
+    var x = window.matchMedia("(max-width: 600px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) 
     if(event.target == element2[0]){
         if(element2[0].attributes['target'].value != 'tab'){
             document.body.insertAdjacentHTML('afterbegin', `
