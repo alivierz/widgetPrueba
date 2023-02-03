@@ -6,9 +6,8 @@ const sendMessageChinchin = ( ) =>{
 let width = 'width: 80%'
 let height = 'height: 90vh'
 function myFunction(x) {
-    let body = document.getElementById('body')
     if (x.matches) { // If media query matches
-        width = '-min-width: 100%'
+        width = 'min-width: 100vh'
         height = 'min-height: 100vh'
     } else {
         width = 'width: 80%'
