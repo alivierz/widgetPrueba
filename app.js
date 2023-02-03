@@ -4,6 +4,7 @@ const sendMessageChinchin = ( ) =>{
     window.top.postMessage('close-widget-chinchin')
 }
 let width = 'width: 80%;height: 90vh;'
+
 function myFunction(x) {
     if (data < 600) { // If media query matches
         width = 'min-height: 100vh;min-width: 10vh;'
@@ -16,7 +17,7 @@ function myFunction(x) {
 
 
 addEventListener('click', (event) =>{
-    const data = window.innerWidth
+    const data = window.top.innerWidth
     myFunction(data)
     if(event.target == element2[0]){
         if(element2[0].attributes['target'].value != 'tab'){
