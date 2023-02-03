@@ -5,8 +5,9 @@ const sendMessageChinchin = ( ) =>{
 }
 let width = 'width: 80%;height: 90vh;'
 function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (data < 600) { // If media query matches
         width = 'min-height: 100vh;min-width: 10vh;'
+        console.log('aqui')
     } else {
         width = 'width: 80%;height: 90vh;'
     }
@@ -15,9 +16,8 @@ function myFunction(x) {
 
 
 addEventListener('click', (event) =>{
-    var x = window.matchMedia("(max-width: 600px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) 
+    const data = window.innerWidth
+    myFunction(data)
     if(event.target == element2[0]){
         if(element2[0].attributes['target'].value != 'tab'){
             document.body.insertAdjacentHTML('afterbegin', `
