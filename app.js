@@ -3,26 +3,12 @@ const element2 = document.getElementsByTagName('chinchin-pay')
 const sendMessageChinchin = ( ) =>{
     window.top.postMessage('close-widget-chinchin')
 }
-let width = 'width: 80%;height: 90vh;'
-
-function myFunction(x) {
-    if (data < 600) { // If media query matches
-        width = 'min-height: 100vh;min-width: 10vh;'
-        console.log('aqui')
-    } else {
-        width = 'width: 80%;height: 90vh;'
-    }
-}
-
-
-
 addEventListener('click', (event) =>{
-    myFunction(window.innerWidth)
     if(event.target == element2[0]){
         if(element2[0].attributes['target'].value != 'tab'){
             document.body.insertAdjacentHTML('afterbegin', `
             <div id="chinchin-alivier" style="position: fixed;backdrop-filter: blur(5px);background-color: rgba(33,35,45,.9);min-height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;top: 0;z-index: 10000;">
-                <div style="align-items: stretch;box-sizing: border-box;display: flex;flex-direction: column;overflow: hidden;justify-content: center;max-height: 650px;max-width: 800px;border-radius: 20px;${width}">
+                <div style="align-items: stretch;box-sizing: border-box;display: flex;flex-direction: column;overflow: hidden;justify-content: center;height: 90vh;max-height: 650px;width: 80%;max-width: 800px;border-radius: 20px;">
                     <iframe src="http://localhost:4200/${element2[0].attributes['idtokenChinchin'].value}" allow-same-origin style="overflow: hidden; min-height: 100%; min-width: 100%;border: none;border-radius: 20px;" ></iframe>
                 </div>
             </div>`
