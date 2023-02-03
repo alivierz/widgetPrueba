@@ -17,8 +17,7 @@ function myFunction(x) {
 
 
 addEventListener('click', (event) =>{
-    const data = window.top.innerWidth
-    myFunction(data)
+    myFunction(window.innerWidth)
     if(event.target == element2[0]){
         if(element2[0].attributes['target'].value != 'tab'){
             document.body.insertAdjacentHTML('afterbegin', `
