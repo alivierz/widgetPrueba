@@ -7,8 +7,8 @@ let width = 'width: 80%'
 let height = 'height: 90vh'
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        width = 'min-width: 100vh'
-        height = 'min-height: 100vh'
+        width = 'min-width: 100vh;'
+        height = 'min-height: 100vh;'
     } else {
         width = 'width: 80%'
         height = 'height: 90vh'
