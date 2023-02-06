@@ -29,16 +29,23 @@ addEventListener('click', (event) =>{
                 max-width: 280px;
                 border-radius: 20px;
             }
+            .framer-chinchin-info{
+                border-radius: 20px;
+            }
             @media (max-width: 700px) {
                 .chinchin-widget-style-info{
-                    min-width: 100vw!important;
-                    min-height: 100vh!important;
+                    width: 100vw!important;
+                    height: 100vh!important;
+                }
+                .framer-chinchin-info{
+                    border-radius: 0;
                 }
             }
+
             </style>
             <div id="chinchin-alivier" style="position: fixed;backdrop-filter: blur(5px);background-color: rgba(33,35,45,.9);min-height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;top: 0;z-index: 10000;">
                 <div class="chinchin-widget-style-info">
-                    <iframe src="http://localhost:4200/room/${element2[0].attributes['idtokenChinchin'].value}" allow-same-origin style="overflow: hidden; min-height: 100%; min-width: 100%;border: none;border-radius: 20px;" ></iframe>
+                    <iframe class="framer-chinchin-info" src="http://localhost:4200/room/${element2[0].attributes['idtokenChinchin'].value}" allow-same-origin style="overflow: hidden; min-height: 100%; min-width: 100%;border: none;" ></iframe>
                 </div>
             </div>`
             );
