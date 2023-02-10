@@ -5,7 +5,7 @@ const sendMessageChinchin = ( ) =>{
 }
 addEventListener('click', (event) =>{
     if(event.target == element['chinchinSelector']){
-        if(element['chinchinSelector'].attributes['target'].value != 'tab'){
+        if(element['chinchinSelector'].attributes['target'].value != 'true'){
             if(window.innerWidth <= 700){
                 document.body.insertAdjacentHTML('afterbegin', `
                 <div id="chinchin-alivier" style="position: fixed;backdrop-filter: blur(5px);background-color: rgba(33,35,45,.9);min-height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;top: 0;z-index: 10000;">
